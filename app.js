@@ -31,19 +31,19 @@ app.get('/', async(req,res) => {
     }
 })
 
-app.get("/about", (req, res) => {
+app.get("/about", async(req, res) => {
     res.render("about", {
         text: aboutContent
     })
 })
 
-app.get("/contact", (req, res) => {
+app.get("/contact", async(req, res) => {
     res.render("contact", {
         text: contactContent
     })
 })
 
-app.get("/compose", (req, res) => {
+app.get("/compose", async(req, res) => {
     res.render("compose")
 })
 
